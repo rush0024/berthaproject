@@ -1,4 +1,183 @@
-div {
-  color: red;
-  height: 20px;
-}
+// body {
+//   display: grid;
+//   grid-template-columns: repeat(12, 1fr);
+// }
+// nav {
+//   grid-row: 1/2;
+//   grid-column: 1/13;
+//   background: #131c1f;
+//   height: 100%;
+// }
+
+// #logo {
+//   display: inline;
+// }
+// #icon-berthapp {
+//   background: url(../../assets/BerthAppIcon.png);
+//   background-size: contain;
+//   background-position: center center;
+//   height: 100px;
+//   width: 100px;
+//   display: inline-block;
+// }
+// #logotext {
+//   display: inline-block;
+//   font-size: 22px;
+//   font-family: "Kodchasan", sans-serif;
+//   color: #fa7040;
+//   display: inline-block;
+//   vertical-align: top;
+//   margin-top: 20px;
+// }
+// #nav-btn-container {
+//   float: right;
+//   margin-top: -10px;
+// }
+// .login-input {
+//   display: inline;
+//   margin-left: 12px;
+// }
+// .login-icon {
+//   height: 25px;
+//   vertical-align: -6px;
+//   margin-right: 2px;
+// }
+// .input-user {
+//   height: 30px;
+//   width: 160px;
+//   border-style: none;
+//   font-size: 15px;
+//   font-family: "Roboto", sans-serif;
+//   color: #445351;
+//   color: rgb(19, 20, 20);
+// }
+// #log-in-btn {
+//   float: right;
+//   height: 30px;
+//   width: 110px;
+//   float: right;
+//   color: #445351;
+//   font-size: 15px;
+//   font-family: "Roboto", sans-serif;
+//   margin-left: 18px;
+//   margin-right: 8px;
+//   background: #fa7040;
+//   border-style: none;
+// }
+// #container {
+//   display: grid;
+//   grid-column: 1/13;
+//   grid-row: 2/13;
+// }
+// #drawer {
+//   grid-column: 1/3;
+//   grid-row: 1/13;
+// }
+// #indicators-form {
+//   grid-row: 2/10;
+//   background: #7e8a8a;
+//   width: 100%;
+// }
+// #form-title {
+//   background: transparent;
+//   color: #fdffff;
+//   font-family: "Jura", sans-serif;
+//   font-size: 17px;
+//   font-weight: lighter;
+//   margin-left: 13px;
+//   margin-top: 10px;
+// }
+// .indicator-input {
+//   background: #e6e8e9;
+//   border-style: solid;
+//   border-color: #7e8a8a;
+//   border-left-width: 10px;
+//   border-right-width: 10px;
+//   width: 100%;
+// }
+// .indicator-icon {
+//   height: 46px;
+//   background: #445351;
+//   vertical-align: -9px;
+//   padding: 7px;
+// }
+// #location-span {
+//   color: #445351;
+//   font-family: "Roboto", sans-serif;
+//   font-size: 15px;
+// }
+// .input-item {
+//   background: #e6e8e9;
+//   border-style: none;
+// }
+// #btn-submit {
+//   height: 50px;
+//   color: #e6e8e9;
+//   font-size: 25px;
+//   font-family: "Roboto", sans-serif;
+//   background: #fa7040;
+//   width: 100%;
+//   margin-bottom: 4px;
+//   border-style: solid;
+//   border-color: #7e8a8a;
+//   border-top-width: 3px;
+//   border-left-width: 10px;
+//   border-right-width: 10px;
+// }
+// #filter {
+//   grid-row: 10/13;
+//   grid-column: 1/3;
+//   background: #e6e8e9;
+//   width: 100%;
+//   height: 550px;
+// }
+// #filter-title {
+//   display: block;
+//   height: 20px;
+//   background: transparent;
+//   color: #445351;
+//   font-family: "Jura", sans-serif;
+//   font-size: 17px;
+//   font-weight: lighter;
+//   margin-left: 12px;
+//   margin-bottom: 40px !important;
+//   padding-top: 20px;
+// }
+// .calendar-icon {
+//   height: 20px;
+// }
+// .datepicker-item {
+//   margin-left: 25px;
+//   margin-top: 0px;
+//   margin-bottom: 10px;
+// }
+// .dp-labels {
+//   display: block;
+//   background: transparent;
+//   color: #445351;
+//   font-family: "Roboto", sans-serif;
+//   font-size: 13px;
+//   font-weight: lighter;
+//   margin-top: 50px;
+//   margin-left: 5px;
+//   margin-bottom: 1px;
+// }
+// #centerview {
+//   display: grid;
+//   grid-column: 3/10;
+//   grid-row: 1/13;
+//   grid-template-rows: repeat(12, 1fr);
+// }
+// #map {
+//   grid-row: 1/6;
+// }
+// #myChart {
+//   grid-row: 6/13;
+//   max-height: 250px;
+// }
+// .pollution-view {
+//   grid-column: 10/13;
+//   display: grid;
+//   grid-template-rows: repeat(auto-fit, minmax(150px, 1fr));
+//   width: 280px;
+// }

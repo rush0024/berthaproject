@@ -1,4 +1,138 @@
-div {
-  color: red;
-  height: 20px;
+body {
+  background-image: url("../../assets/LoginBackgroundPng.png");
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+#logo-top {
+  display: inline;
+}
+
+#icon-top {
+  background: url(../../assets/BerthAppIcon.png);
+  background-size: contain;
+  background-position: center center;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+#BerthaTextLogo {
+  display: inline-block;
+  font-size: 25px;
+  font-family: "Kodchasan", sans-serif;
+  color: #445351;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 20px;
+}
+
+#main-form {
+  grid-column: 2/3;
+  width: 270px;
+  margin: 0 auto;
+  background-color: rgba($color: white, $alpha: 0.5);
+  height: 350px;
+  margin: 30% auto;
+}
+
+#logo-round {
+  display: block;
+  margin: 10 auto;
+  height: 70px;
+  width: 70px;
+  background: url(../../assets/userIconW.png);
+  background-size: cover;
+  background-color: #fa7040;
+  border-radius: 50%;
+  border-style: none;
+  background-position: center center;
+  margin-top: -32px;
+  margin-bottom: 35px;
+}
+
+#signup-label {
+  display: block;
+  font-size: 22px;
+  text-align: center;
+  margin: 25 auto;
+  font-family: "Kodchasan", sans-serif;
+  font-weight: 600;
+  color: #445351;
+}
+
+.login-input {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.login-icons {
+  height: 35px;
+  width: 35px;
+  display: inline-block;
+}
+
+#user-icon {
+  background: url(../../assets/UserIconV2Orange.png);
+  background-size: cover;
+  border-style: none;
+  background-position: center center;
+}
+
+#password-icon {
+  background: url(../../assets/lockIconV2Orange.png);
+  background-size: cover;
+  border-style: none;
+  background-position: center center;
+}
+
+.login-inputs {
+  height: 35px;
+  width: 210px;
+  vertical-align: top;
+  border-style: none;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  font-weight: lighter;
+  color: #445351;
+  padding: 10px;
+}
+
+#login-btn {
+  margin: 10 auto;
+  height: 40px;
+  width: 250px;
+  border-style: none;
+  color: whitesmoke;
+  font-size: 20px;
+  font-family: "Kodchasan", sans-serif;
+  background-color: #20343b;
+}
+
+#login-extra {
+  display: flex;
+  justify-content: space-between;
+}
+
+#rememberme-div {
+  margin: 5px;
+}
+#remember-me {
+  font-family: "Jura", sans-serif;
+  font-size: 12px;
+  background: transparent;
+  color: #7e8a8a;
+  vertical-align: top;
+}
+
+#forgot-password {
+  font-family: "Jura", sans-serif;
+  font-size: 12px;
+  background: transparent;
+  color: #7e8a8a;
+  margin: 5px;
 }

@@ -3,19 +3,123 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Using Parcel with OpenLayers</title>
-    <style>
-        #map {
-            width: 400px;
-            height: 250px;
-        }
-    </style>
+    <title>BerthApp</title>
+    <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.userview.css %>">
+    <link rel="stylesheet" href="style.css" type="css">
+    <link rel="stylesheet" href="https://openlayers.org/en/latest/css/ol.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Kodchasan|Roboto|Jura" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+        $(function () {
+            $("#datepickerfrom").datepicker();
+        });
+    </script>
+    <script>
+        $(function () {
+            $("#datepickerto").datepicker();
+        });
+    </script>
+
 </head>
 
 <body>
-    <h1>A ver!!! Motherfucker</h1>
-    <script src="<%= htmlWebpackPlugin.files.chunks.userview.entry %>"></script>
-    <script> console.log("In the html script")</script>
+    <nav>
+        <div id="logo">
+            <div id="icon-berthapp"></div>
+            <label id="logotext">BerthApp</label>
+        </div>
+        <div id="nav-btn-container">
+            <button id="log-in-btn">Login</button>
+            <div class="login-input">
+                <div class="login-icon" id="user-icon"></div>
+                <input type="text" id="insertCodeTextBox" class="input-user" placeholder="Username">
+            </div>
+            <div class="login-input">
+                <div class="login-icon" id="password-icon"></div>
+                <input type="password" id="insertPasswordTextBox" class="input-user" placeholder="Password">
+            </div>
+        </div>
+    </nav>
+    <div id="container">
+        <div id="drawer">
+            <div id="filter">
+                <label id="filter-title">Find Yourself</label>
+                <div class="datepicker-item" id="datepicker-from">
+                    <label class="dp-labels">From</label>
+                    <div class="calendar-icon"></div>
+                    <input type="text" id="datepickerfrom" class="datepickers">
+                </div>
+                <div class="datepicker-item" id="datepicker-to">
+                    <label class="dp-labels">To</label>
+                    <div class="calendar-icon"></div>
+                    <input type="text" id="datepickerto" class="datepickers">
+                </div>
+            </div>
+            <form id="indicators-form">
+                <label id="form-title">Give Yourself</label>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="map-icon"></div>
+                    <span type="text" id="location-span" placeholder="click on map">click the map</span>
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="blood-icon"></div>
+                    <input class="input-item" type="text" placeholder="blood pressure" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="temperature-icon"></div>
+                    <input class="input-item" type="text" placeholder="body temperature" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="heart-beat"></div>
+                    <input class="input-item" type="text" placeholder="heart beat" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="dust-percentage"></div>
+                    <input class="input-item" type="text" placeholder="dust percentage" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="sulphur-icon"></div>
+                    <input class="input-item" type="text" placeholder="sulphur dioxide" />
+                </div class="indicator-input">
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="nitrogen-icon"></div>
+                    <input class="input-item" type="text" placeholder="oxidized nitrogen" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="fluor-icon"></div>
+                    <input class="input-item" type="text" placeholder="fluor" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="carbon-icon"></div>
+                    <input class="input-item" type="text" placeholder="carbon monoxide" />
+                </div>
+                <div class="indicator-input">
+                    <div class="indicator-icon" id="ozone-icon"></div>
+                    <input class="input-item" type="text" placeholder="ozone percentage" />
+                </div>
+                <button type="submit" id="btn-submit">Save</input>
+            </form>
+        </div>
+        <div id="centerview">
+            <div id="map"></div>
+            <div id="health-chart"></div>
+        </div>
+        <div class=" pollution-view">
+            <div class="pollution-chart" id="dp-chart"></div>
+            <div class="pollution-chart" id="sp-chart"></div>
+            <div class="pollution-chart" id="op-chart"></div>
+            <!-- <canvas class="pollution-chart " id="fluor-chart ">fluor-chart</canvas>
+            <canvas class="pollution-chart " id="cmp-chart ">cmp-chart</canvas>
+            <canvas class="pollution-chart " id="oz-chart ">oz-chart</canvas> -->
+
+        </div>
+    </div>
 </body>
 
 </html>
