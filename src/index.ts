@@ -1,21 +1,27 @@
 import "./scss/main.scss";
-import logoRound from "../assets/BerthAppIcon.png";
+// import QueryFactory from "./queryfactory";
+import axios, { AxiosResponse, AxiosError } from "../node_modules/axios/index";
+import Service from "./service";
 
-// function loadLogo() {
-//   // let backElement: HTMLDivElement = <HTMLDivElement>(
-//   //   document.getElementById("image-background")
-//   // );
+let loginBtn: HTMLInputElement = <HTMLInputElement>(
+  document.getElementById("login-btn")
+);
 
-//   let logoElement = document.createElement("logo-round");
+loginBtn.addEventListener("click", TestAxios);
 
-//   const logo = new Image();
-//   logo.src = logoRound;
+function TestAxios() {
+  event.preventDefault();
 
-//   logoElement.appendChild(logo);
+  let service = new Service();
+  service.get();
+}
 
-//   return logoElement;
+// loginBtn.addEventListener("click", ExecuteLogin);
+
+// loginBtn.addEventListener("click", Login);
+
+// function ExecuteLogin() {
+//   let queryFactory = new QueryFactory();
+//   this.response = queryFactory.getTest();
+//   console.log(this.response);
 // }
-
-// document.body.appendChild(loadLogo());
-
-console.log("Este es mi TS");

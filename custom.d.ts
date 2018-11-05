@@ -12,3 +12,4 @@ declare module "index" {
   const value: string;
   export = value;
 }
+declare var promise: Promise<void>;
