@@ -6,6 +6,8 @@ const WebpackMd5Hash = require("webpack-md5-hash");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+// change to chekc 
+
 module.exports = {
   mode: "development",
   entry: {
